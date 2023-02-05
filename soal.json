@@ -1,0 +1,12 @@
+[
+  {
+    "pertanyaan": "Siapa nama presiden Indonesia?",
+    "pilihan": ["Prabowo", "Jokowi", "Budiman S", "Johny Sin", "Adam Levine"],
+    "jawaban": "b"
+  },
+  {
+    "pertanyaan": "Siapa juara MotoGP 2022?",
+    "pilihan": ["Bagnaia", "Quartararo", "Messi", "Ronaldinho", "Aleix Espargaro"],
+    "jawaban": "a"
+  }
+]
