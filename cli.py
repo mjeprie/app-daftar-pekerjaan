@@ -12,21 +12,21 @@ while True:
 
     pilihan_user = input().lower()
 
-    if pilihan_user.startswith('1'):
+    if pilihan_user.startswith('Tampilkan'):
         print('Daftar Pekerjaan:')
         list_pekerjaan = get_pekerjaan()
         for index, item in enumerate(list_pekerjaan):
             item = item.strip("\n")
             print(f"{index + 1}. {item}")
 
-    elif pilihan_user.startswith('2'):
+    elif pilihan_user.startswith('Tambah'):
         print("Pekerjaan baru:", end=' ')
         pekerjaan_baru = input()
         pekerjaan_baru = pekerjaan_baru.capitalize()
         tulis_pekerjaan('\n', 'a')
         tulis_pekerjaan(pekerjaan_baru, 'a')
 
-    elif pilihan_user.startswith('3'):
+    elif pilihan_user.startswith('Edit'):
         print('Nomor pekerjaan yang akan diubah:', end=' ')
         list_pekerjaan = get_pekerjaan()
         nomor_pekerjaan = int(input())
@@ -43,7 +43,7 @@ while True:
         #     file.writelines()
         print(f"{pekerjaan_lama} sudah diganti dengan {pekerjaan_baru}.")
 
-    elif pilihan_user.startswith('4'):
+    elif pilihan_user.startswith('Hapus'):
         print('Nomor pekerjaan yang sudah selesai:', end=' ')
         list_pekerjaan = get_pekerjaan()
         nomor_pekerjaan = int(input())
@@ -53,7 +53,7 @@ while True:
         tulis_pekerjaan(list_pekerjaan)
         print(f"{pekerjaan_lama} sudah dihapus.")
 
-    elif pilihan_user.startswith('5'):
+    elif pilihan_user.startswith('Keluar'):
         break
 
     else:
